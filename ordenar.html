@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Ordenar Tabela</title>
+         
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+         
+        <script type="text/javascript">
+ 
+            $(function(){
+                //função que faz a linha descer na tabela
+                $(".descer").click(function(){
+                    var objLinha = $(this).parent().parent(); //Pega o objeto linha <tr>
+                    $(objLinha).next().after(objLinha); //Abaixo da linha clicada, insere a linha clicada
+                });
+                 
+                //função que faz a linha subir na tabela
+                $(".subir").click(function(){
+                    var objLinha = $(this).parent().parent(); //Pega o objeto linha <tr>
+                    $(objLinha).prev().before(objLinha); //Acima da linha clicada, insere a linha clicada
+                });             
+ 
+            });
+         
+        </script>
+         
+    </head>
+ 
+    <body>
+        <table border="1" width="300">
+            <tr>
+                <td width="100">1</td>
+                <td width="100"><a href="javascript:void(0)" class="subir">subir</a></td>
+                <td width="100"><a href="javascript:void(0)" class="descer">descer</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="javascript:void(0)" class="subir">subir</a></td>
+                <td><a href="javascript:void(0)" class="descer">descer</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="javascript:void(0)" class="subir">subir</a></td>
+                <td><a href="javascript:void(0)" class="descer">descer</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a href="javascript:void(0)" class="subir">subir</a></td>
+                <td><a href="javascript:void(0)" class="descer">descer</a></td>
+            </tr>
+        </table>
+    </body>
+</html>

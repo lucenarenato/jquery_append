@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+    <head>
+        <title>Utilizando o método prepend() do Jquery</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+         
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#prepend").click(function () {
+                    $('.conteudo').prepend("<div class='novo_conteudo'>Novo conteúdo Prepend()</div>");
+                });  
+            })
+             
+        </script>
+         
+        <style type="text/css">
+            .conteudo { padding:5px; border:1px solid #000; width:200px; height:200px; }
+            .novo_conteudo { padding:5px; border:1px solid #F00; width:100px; height:50px; }
+        </style>
+         
+    </head>
+     
+    <body>
+         
+        <div class="conteudo">Conteúdo Normal</div>
+ 
+        <br/>
+         
+        <input type="button" name="prepend" id="prepend" value="Executar Prepend()">
+         
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title></title>
+      <link rel="stylesheet" href="style.css" />
+ 
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+      <script src="js/jquery.tmpl.js"></script>
+   </head>
+   <body>
+ 
+      <h1> Tweets about Nettuts+ </h1>
+ 
+      <script id="tweets" type="text/x-jquery-tmpl">
+         <li>
+            <img src="${imgSource}" alt="${userName}" />
+            <h2> ${username} </h2>
+            <p> ${tweet} </p>
+ 
+            {{if geo}} 
+            <span>
+               ${geo} 
+            </span>
+            {{/if}} 
+         </li>
+      </script>
+ 
+      <ul id="twitter"></ul>
+ 
+      <script>
+         $.ajax({
+            type : 'GET',
+            dataType : 'jsonp',
+            url : 'http://search.twitter.com/search.json?q=nettuts',
+ 
+            success : function(tweets) {
+               var twitter = $.map(tweets.results, function(obj, index) {
+                  return {                      
+                     username : obj.from_user,
+                     tweet : obj.text,
+                     imgSource : obj.profile_image_url,
+                     geo : obj.geo
+                  };
+               });
+ 
+               $('#tweets').tmpl(twitter).appendTo('#twitter');
+            }
+      });
+ 
+      </script>
+   </body>
+</html>
+
+<!--https://code.tutsplus.com/tutorials/quick-tip-working-with-the-official-jquery-templating-plugin--net-14991-->
