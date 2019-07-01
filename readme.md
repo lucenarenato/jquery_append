@@ -1,6 +1,8 @@
 # Entendendo prepend(), prependTo(), appeend() e appeendTo() do Jquery
 ## botão bootstrap add dinamico
 
+<p align="center"><img src="Captura de tela_2019-07-01_12-21-31.png"></p><br>
+<p align="center"><img src="Captura de tela_2019-07-01_12-22-08.png"></p><br>
 
 ## Entendendo prepend(), prependTo(), appeend() e appeendTo() do Jquery
 > Olá Pessoal
@@ -221,7 +223,9 @@ Ao executarmos esse exemplo, e clicarmos no botão “Executar appendTo()” ver
 - http://blog.renatolucena.net
 - https://jsfiddle.net/cpdrenato/1ghwad46/
 - https://stackoverflow.com/questions/38091406/dynamically-populating-input-text-boxes-and-removing-them-using-jquery
+
 <br>
-<a href="https://twitter.com/cpdrenato"><img src="https://img.shields.io/twitter/url/http/shields.io.svg" alt="Follow @cpdrenato on Twitter"></img></a>
+
+<a href="https://twitter.com/cpdrenato"><img src="https://img.shields.io/twitter/url/http/shields.io.svg" alt="Follow @cpdrenato on Twitter"></img></a><br>
 > Renato Lucena - 2019
 
