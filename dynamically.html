@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+    <head>
+        <title>Utilizando o método append() do Jquery</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+         
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+		  var wrapper = $(".input_fields_wrap");
+		  var add_button = $(".add_field_button");
+
+
+		  $(add_button).click(function(e) {
+		    e.preventDefault();
+
+		    var append1 = $(wrapper).append('<div><input type="text" name="mytext[]"/><button class="add_field_button1">+</button><button class="remove_field">-</button></div>');
+		    $(".add_field_button").hide();
+
+		  });
+
+		  $(wrapper).on("click", ".remove_field", function() {
+
+		    $(this).parent('div').remove();
+
+		  })
+		  $(wrapper).on("click", ".add_field_button1", function() {
+
+		    $("#inputfield").append('<div><input type="text" name="mytext[]"/><button class="add_field_button">+</button><button class="remove_field">-</button></div>');
+
+		  })
+		});
+
+             
+        </script>
+         
+        <style type="text/css">
+            
+        </style>
+         
+    </head>
+     
+    <body>
+         
+
+	<div class="input_fields_wrap">
+	  <div id="inputfield">
+	    <input type="text" name="mytext[]">
+	    <button class="add_field_button">+</button>
+	  </div>
+	</div>
+         
+    </body>
