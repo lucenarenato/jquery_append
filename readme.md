@@ -15,7 +15,7 @@ Esse método permite adicionar conteúdo ao INÍCIO de um elemento HTML. Este co
 
 Exemplo:
 
-
+```html
 <html>
     <head>
         <title>Utilizando o método prepend() do Jquery</title>
@@ -48,6 +48,7 @@ Exemplo:
          
     </body>
 </html>
+```
 
 Ao executarmos esse exemplo e clicarmos algumas vezes no botão “Executar Prepend()” veremos que irá inserir o
 <div class=’novo_conteudo’>Novo conteudo Prepend()</div> acima do Conteúdo Normal, e ao clicarmos em exibir o código fonte o seguinte coóigo será exibido:
@@ -66,7 +67,7 @@ Esse método permite adicionar conteúdo ao FINAL de um elemento HTML. Este cont
 
 Exemplo:
 
-
+```html
 <html>
     <head>
         <title>Utilizando o método append() do Jquery</title>
@@ -99,6 +100,8 @@ Exemplo:
          
     </body>
 </html>
+```
+
 Ao executarmos esse exemplo e clicarmos algumas vezes no botão “Executar Append()” veremos que irá inserir <div class=’novo_conteudo’>Novo conteudo Append()</div> abaixo do Conteúdo Normal, e ao clicarmos em exibir o código fonte o seguinte codigo será exibido:
 
 
@@ -113,7 +116,7 @@ Com o método append() o conteúdo sempre será inserido antes da </div>.
 
 Esse método é usado quando queremos recortar algum conteúdo da página e colar para dentro de um seletor. Esse conteúdo é inserido no INÍCIO desse seletor. Executado o exemplo abaixo fica mais fácil de se entender.
 
-
+```html
 <html>
     <head>
         <title>Utilizando o método prependTo() do Jquery</title>
@@ -149,23 +152,23 @@ Esse método é usado quando queremos recortar algum conteúdo da página e cola
          
     </body>
 </html>
-
+```
 Ao executarmos esse exemplo, e clicarmos no botão “Executar prependTo()” veremos que irá recortar o conteúdo <div class=”novo_conteudo”>Novo conteúdo prependTo()</div> e colocar dentro do <div class=”conteudo”>Conteúdo Normal</div>, ficando:
 
-
+```html
 <div class="conteudo">
     <div class="novo_conteudo">
         Novo conteúdo prependTo()
     </div>
     Conteúdo Normal
 </div>
-
+```
 
 ## appendTo() 
 
 Esse método é usado quando queremos recortar algum conteúdo da página e colar para dentro de um seletor. Esse conteúdo é inserido no FINAL desse seletor. Executado o exemplo abaixo fica mais fácil de se entender.
 
-
+```html
 <html>
     <head>
         <title>Utilizando o método appendTo() do Jquery</title>
@@ -201,20 +204,24 @@ Esse método é usado quando queremos recortar algum conteúdo da página e cola
          
     </body>
 </html>
+```
 Ao executarmos esse exemplo, e clicarmos no botão “Executar appendTo()” veremos que irá recortar o conteúdo <div class=”novo_conteudo”>Novo conteúdo prependTo()</div> e colocar dentro do <div class=”conteudo”>Conteúdo Normal</div> antes da </div>, ficando:
 
-
+```html
 <div class="conteudo">
     Conteúdo Normal
     <div class="novo_conteudo">
         Novo conteúdo prependTo()
     </div>    
 </div>
+```
 
 ### Espero te ajudado, até a próxima pessoal
 
-- https://mateusgamba.wordpress.com/2010/09/22/entendendo-prepend-prependto-appeend-e-appeendto-do-jquery/
-- https://mateusgamba.wordpress.com/category/jquery/
+- http://blog.renatolucena.net
+- https://jsfiddle.net/cpdrenato/1ghwad46/
+- https://stackoverflow.com/questions/38091406/dynamically-populating-input-text-boxes-and-removing-them-using-jquery
+<br>
 <a href="https://twitter.com/cpdrenato"><img src="https://img.shields.io/twitter/url/http/shields.io.svg" alt="Follow @cpdrenato on Twitter"></img></a>
 > Renato Lucena - 2019
 
